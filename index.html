@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brown Spider</title>
+<!-- tab icon-->
+<link rel="icon" type="image/x-icon" href="imgs/spider.ico" />
+<!-- css-->
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="imgs/logo2.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-bars" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>The Brown Spider's Nest</h1>
+            <p>Here you can find out about my passion for cosplaying the web slinger known as Spider-Man.</p>
+            <a href="contact.html" class="hero-btn">Learn More</a>
+        </div>
+    </section>
+
+<!--second section-->
+<section class ="inspiration">
+    <h1>Inspiration</h1>
+    <p> Writer Stan Lee and illustrator Steve Ditko created Spider-Man. A fundamental part of being Spider-Man is that it sucks to be him. 
+        Peter is constantly fighting an uphill battle, he is always unlucky and rarely things go his way. He sacrifices his personal life and relationships in order to do the right thing. 
+        Even when he does the right thing, he is criticized by someone. There are often times when Peter thinks about giving up his hero days but he always comes back knowing he has a responsibility to help others.
+        The reason why Spider-Man is so popular is because we can all relate to him. Under the mask and superhero fantasy character, he is just like us down on our luck struggling but persevering through it all. He reminds us there is a hero in all of us.</p>
+    <div class="row">
+        <div class="insp-col">
+            <h3>Stan Lee</h3>
+            <p> "Nothing ever turns out 100 percent OK, he's got a lot of problems, and he does things wrong, and I can relate to that.” -Stan Lee </p>
+        </div>
+        <div class="insp-col">
+            <h3>Under the Mask</h3>
+            <p> It could be anyone under that mask 
+            so every child could imagine themselves as the hero. </p>
+        </div>
+        <div class="insp-col">
+            <h3>Responsibility</h3>
+            <p> With great power comes great responsibility. </p>
+        </div>
+    </div>
+
+</section>
+
+
+<!----Gallery---->
+<section class="gallery">
+    <h1>Gallery<h1>
+    <p> View my collection of photos dressed as Spidey </p>   
+    
+    <div class="row">
+        <div class="gallery-col">
+            <img src="imgs/ironspidey.png">
+            <h3>Iron Spider Armor</h3> 
+            <p>An armored version, comprised of nanotechnology. A robust and more military technology-like suit.</p>
+        </div>
+        <div class="gallery-col">
+            <img src="imgs/ffh.png">
+           <h3>Far From Home</h3> 
+            <p>The red and black suit presented in the MCU feels like a classic already in such a short period of time.</p>
+        </div>
+        <div class="gallery-col">
+            <img src="imgs/comicstyle.png">
+            <h3>The Amazing Spider-Man</h3> 
+            <p>Inspired by the movie, this is my favorite Spider-Man suit of all time. Features a perfect blend of modernity to the comic suits. </p>
+        </div>
+    </div>
+</section>
+
+
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>
